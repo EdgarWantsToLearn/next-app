@@ -14,8 +14,8 @@ model Post {
   id        Int      @id @default(autoincrement())
   title     String
   content   String?
-  categorie Category? @relation(fields: [categoryId], references: [id])
-  categoryID int?
+  category Category? @relation(fields: [categoryId], references: [id])
+  categoryId Int?
 }
 
 model Category {
